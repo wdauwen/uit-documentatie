@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	{% include head.html %}
+
+	<body>
+
+		{% include header.html %} {% assign filename = page.path | split: '/' | last %}
+		{% assign folder = page.path | remove: filename %}
+		{% for book in site.data.library %}
+			{% for version in book.versions %}
+				{% if folder contains version.path %}
+					{% assign selected_book = book %}
+					{% assign selected_version = version %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+
+		<div class="toc">
+
+				<section class="all-books">
+						<a href="/">Index</a>
+				</section>
+
+				<section class="book-details">
+					<a href="/{{selected_version.path}}index.html" class="hyperspan"></a>
+					<h3 class="book-title">{{selected_book.title}} <span class="book-version"> {{selected_version.name}}</span></h3>
+				</section>
+
+				<nav role="navigation">
+				{% assign found = true %}
+				{% include toc-item.html collection=selected_version.summary level=0 path=selected_version.path %}
+				</nav>
+
+				<section class="book-versions">
+					<ul>
+						{% for version in selected_book.versions %}
+						<li><a href="/{{version.path}}index.html">{{version.name}}</a></li>
+						{% endfor %}
+					</ul>
+				</section>
+
+		</div>
+
+		<div class="page">
+			<div class="page-inner">
+				<article>
+					<section class="markdown-body">
+					{{ content }}
+					</section>
+
+					<p>Lees verder: <a href="{{next-path}}">{{next-title}}</a></p>
+
+					{% include footer.html %}
+
+				<article>
+			</div>
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,25 @@
+{% if include.collection.size > 0 %}
+<ol class="toc-item level-{{ include.level }}">
+    {% for item in include.collection %}
+      {% capture full_path %}/{{include.path}}{{ item.href }}/{% endcapture %}
+      {% if found == true %}
+        {% assign found = false %}
+        {% assign next-title = item.title %}
+        {% assign next-path = full_path %}
+      {% endif %}
+
+      {% if page.url == full_path %}
+        <li class="active">
+        {% assign found = true %}
+      {% else %}
+      <li>
+        {% endif %}
+          <a href="{{full_path}}" class="toc-item-link">
+            {{ item.title }}
+          </a>
+          {% assign next_level = include.level | plus: 1 %}
+          {% include toc-item.html collection=item.summary level=next_level path=include.path %}
+        </li>
+    {% endfor %}
+  </ol>
+{% endif %}

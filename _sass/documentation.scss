@@ -1,0 +1,201 @@
+*, .fa {
+    -webkit-font-smoothing: antialiased;
+}
+
+table {
+	border-spacing: 0;
+}
+
+body {
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	color: $text-color;
+}
+
+a {
+	color: $brand-primary;
+}
+
+.toc {
+	position: absolute;
+	top: 0;
+	left: -300px;
+	bottom: 0;
+	z-index: 1;
+	width: 300px;
+	color: #364149;
+	background: #fafafa;
+	border-right: 1px solid $border-color;
+	-webkit-transition: left 250ms ease;
+	-moz-transition: left 250ms ease;
+	-o-transition: left 250ms ease;
+	overflow-y: auto;
+}
+
+.toc {
+    left: 0;
+}
+
+.page {
+  color: #000;
+  background: #fff;
+  -webkit-transition: left 250ms ease;
+  -moz-transition: left 250ms ease;
+  -o-transition: left 250ms ease;
+  transition: left 250ms ease;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  bottom: 0;
+  right: 0;
+}
+
+.page {
+	left: 300px;
+}
+
+.page-inner {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: $spacing-unit $spacing-unit/2 0 $spacing-unit/2;
+}
+
+.book-details {
+	background-color: $brand-primary;
+	border-bottom: 1px solid $border-color;
+	display: block;
+	overflow: hidden;
+	padding: $spacing-unit;
+	color: #FFF;
+	position: relative;
+}
+
+.hyperspan
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	bottom: 0;
+	display: block;
+}
+
+.all-books {
+	background-color: darken($brand-primary, 10%);
+	border-bottom: 1px solid darken($brand-primary, 10%);
+	color: #FFF;
+	padding: $spacing-unit/2 $spacing-unit;
+
+	a {
+		color: #FFF;
+	}
+}
+
+.book-title {
+	margin: 0;
+}
+
+.book-version {
+	font-size: small;
+	font-weight: normal;
+}
+
+.book-versions {
+	border-top: 1px solid $border-color;
+}
+
+.toc-item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 1.2;
+	color: #777;
+}
+
+.toc-item-link {
+	text-decoration: none;
+	color: $text-color;
+}
+
+.active > .toc-item-link {
+	color: $brand-primary;
+}
+
+.book-teaser {
+	border: 1px solid $border-color;
+	padding: 1em;
+	margin-right: $spacing-unit;
+	width: 20%;
+	float: left;
+	display: block;
+}
+
+
+.btn {
+	padding: 3px 9px;
+	border: 1px solid $brand-primary;
+	text-decoration: none;
+	border-radius: 2px;
+
+	&:hover {
+		border-color: darken($brand-primary, 20%);
+		background-color: $brand-primary;
+		color: #FFF;
+		-moz-transition: all 0.15s ease-out;
+		-webkit-transition: all 0.15s ease-out;
+		-o-transition: all 0.15s ease-out;
+		transition: all 0.15s ease-out;
+	}
+}
+
+.book-description {
+	color: #777;
+}
+
+.catalog {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: block;
+}
+
+.books {
+	margin-left: -$spacing-unit;
+	margin-right: -$spacing-unit;
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+footer {
+	border-top: 1px solid $border-color;
+	clear: both;
+	display: block;
+	margin-top: $spacing-unit;
+	padding-top: $spacing-unit/2;
+}
+
+.hero {
+	background-color: $brand-primary;
+	color: #FFF;
+	margin-bottom: $spacing-unit/2;
+}
+
+.hero-content {
+	max-width: 800px;
+	margin: 0 auto;
+	display: block;
+	padding: 1em;
+	text-align: center;
+}
+
+.hero-description {
+	font-size: 24px;
+	line-height: 1em;
+}
