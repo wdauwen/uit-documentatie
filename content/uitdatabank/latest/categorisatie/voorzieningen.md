@@ -2,6 +2,9 @@
 ---
 
 # Voorzieningen
+
+
+
 | Categorie | Toelichting | Identifier |
 | --- | --- | --- |
 | Giftshop | Winkel, verbonden aan een instelling, waar allerlei goederen met betrekking tot de instelling of een evenement aldaar kunnen worden gekocht. Voorbeelden: museumshop. | 3.0.0.0.0 |

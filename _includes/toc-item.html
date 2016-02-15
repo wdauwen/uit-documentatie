@@ -9,15 +9,17 @@
       {% endif %}
 
       {% if page.url == full_path %}
-        <li class="active">
+        <li class="toc-list-item active">
         {% assign found = true %}
+        {% assign prev-title = loop-prev-title %}
+        {% assign prev-path =  loop-prev-path %}
       {% else %}
-      <li>
+        <li class="toc-list-item">
         {% endif %}
-          <a href="{{full_path}}" class="toc-item-link">
-            {{ item.title }}
-          </a>
+          <a href="{{full_path}}" class="toc-item-link">{{ item.title }}</a>
           {% assign next_level = include.level | plus: 1 %}
+          {% assign loop-prev-title = item.title %}
+          {% assign loop-prev-path = full_path %}
           {% include toc-item.html collection=item.summary level=next_level path=include.path %}
         </li>
     {% endfor %}

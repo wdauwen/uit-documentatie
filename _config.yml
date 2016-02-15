@@ -17,3 +17,4 @@ permalink: pretty
 markdown: kramdown
 kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+search_api_server: "https://www.uitid.be/uitid/rest"

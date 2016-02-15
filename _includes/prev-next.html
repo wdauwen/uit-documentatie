@@ -1,0 +1,14 @@
+<section class="prev-next">
+	<section class="prev">
+		{% if prev-path %}
+			<p>Lees vorige:<br/> <a href="{{prev-path}}">{{prev-title}}</a></p>
+		{% endif %}
+		&nbsp;
+	</section>
+	<section class="next">
+		{% if next-path %}
+			<p>Lees verder:</br> <a href="{{next-path}}">{{next-title}}</a></p>
+		{% endif %}
+		&nbsp;
+	</section>
+</section>

@@ -15,7 +15,7 @@
 | 6 | Theatervoorstelling | Vertoning van dans, acteerwerk, muziek, mime of een combinatie van deze. | 0.55.0.0.0 7 |
 | 7 | Wedstrijd bekijken | Voorbeelden: De Koningin Elisabeth wedstrijd, de Nekkanacht, danswedstrijden, maar ook atletiekwedstrijden en voetbalmachten. | 0.19.0.0.0 |
 
-** Bezoeken **
+**Bezoeken**
 
 | Nr | Label | Scope note | Identifier |
 | --- | --- | --- | --- |

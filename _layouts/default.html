@@ -5,7 +5,7 @@
 
 	<body>
 
-		{% include header.html %} {% assign filename = page.path | split: '/' | last %}
+		{% assign filename = page.path | split: '/' | last %}
 		{% assign folder = page.path | remove: filename %}
 		{% for book in site.data.library %}
 			{% for version in book.versions %}
@@ -16,46 +16,61 @@
 			{% endfor %}
 		{% endfor %}
 
+		{% include header.html %}
+
 		<div class="toc">
 
-				<section class="all-books">
-						<a href="/">Index</a>
-				</section>
-
-				<section class="book-details">
-					<a href="/{{selected_version.path}}index.html" class="hyperspan"></a>
-					<h3 class="book-title">{{selected_book.title}} <span class="book-version"> {{selected_version.name}}</span></h3>
-				</section>
+			<div class="toc-inner">
 
 				<nav role="navigation">
-				{% assign found = true %}
+				{% assign found = false %}
 				{% include toc-item.html collection=selected_version.summary level=0 path=selected_version.path %}
 				</nav>
 
+				{% if selected_book.versions.size > 1 %}
 				<section class="book-versions">
+					<p>Andere versies:</p>
 					<ul>
 						{% for version in selected_book.versions %}
-						<li><a href="/{{version.path}}index.html">{{version.name}}</a></li>
+							{% if version.name != selected_version.name %}
+								<li><a href="/{{version.path}}index.html">{{version.name}}</a></li>
+							{% endif %}
 						{% endfor %}
 					</ul>
 				</section>
+				{% endif %}
+
+			</div>
 
 		</div>
 
 		<div class="page">
 			<div class="page-inner">
+
+				<a class="menu">
+					<div class="hamburger">
+						 <span></span>
+						 <span></span>
+						 <span></span>
+					</div>
+				 Inhoud
+				</a>
+
 				<article>
+
 					<section class="markdown-body">
 					{{ content }}
 					</section>
 
-					<p>Lees verder: <a href="{{next-path}}">{{next-title}}</a></p>
+					{% include prev-next.html %}
 
 					{% include footer.html %}
 
 				<article>
 			</div>
 		</div>
+
+		<div class="overlay"></div>
 
 	</body>
 

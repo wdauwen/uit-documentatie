@@ -9,9 +9,9 @@ Collaboration services maken het mogelijk om eigen of andermans informatie uit t
 
 | Url | POST | DELETE |
 | -- | -- | -- |
-|{server}/api/v2/{event,production,actor}/{id}/translations	| X | X |
-|{server}/api/v2/{event,production,actor}/{id}/keywords	 | X | X |
-|{server}/api/v2/{event,production,actor}/{id}/links	 | X | X |
+|{{site.search_api_server}}/api/v2/{event,production,actor}/{id}/translations	| X | X |
+|{{site.search_api_server}}/api/v2/{event,production,actor}/{id}/keywords	 | X | X |
+|{{site.search_api_server}}/api/v2/{event,production,actor}/{id}/links	 | X | X |
 
 
 ##Vertaling toevoegen
@@ -23,7 +23,7 @@ POST
 
 URL:
 ```
-{server}/api/v2/{event|actor|production}/{id}/translations
+{{site.search_api_server}}/api/v2/{event|actor|production}/{id}/translations
 ```
 
 **Argumenten**
@@ -41,7 +41,7 @@ URL:
 Request URL
 
 ```
-{server}/api/v2/event/123/translation
+{{site.search_api_server}}/api/v2/event/123/translation
 ```
 
 Post data
@@ -82,7 +82,7 @@ DELETE
 URL
 
 ```
-{server}/api/v2/{event|actor|production}/{id}/translations
+{{site.search_api_server}}/api/v2/{event|actor|production}/{id}/translations
 ```
 
 **Argumenten**
@@ -121,7 +121,7 @@ POST
 URL:
 
 ```
-{server}/api/v2/{event|actor|production}/{id}/keywords
+{{site.search_api_server}}/api/v2/{event|actor|production}/{id}/keywords
 ```
 
 **Argumenten**
@@ -181,7 +181,7 @@ DELETE
 
 URL:
 ```
-{server}/api/v2/{event|actor|production}/{id}/keywords
+{{site.search_api_server}}/api/v2/{event|actor|production}/{id}/keywords
 ```
 
 **Argumenten**
@@ -198,7 +198,7 @@ Het is enkel toegestaan keywords te verwijderen die door de betreffende auteur z
 Request URL
 
 ```
-{server}/api/v2/event/123123/keywords
+{{site.search_api_server}}/api/v2/event/123123/keywords
 ```
 
 Post data
@@ -224,7 +224,7 @@ POST
 
 URL:
 ```
-{server}/api/v2/{event|actor|production}/{id}/links
+{{site.search_api_server}}/api/v2/{event|actor|production}/{id}/links
 ```
 
 **Argumenten**
@@ -242,7 +242,7 @@ URL:
 Request URL
 
 ```
-{server}/api/v2/event/123123/links?key=0689559111
+{{site.search_api_server}}/api/v2/event/123123/links?key=0689559111
 ```
 
 Post data
@@ -269,7 +269,7 @@ DELETE
 ```
 URL:
 ```
-{server}/api/v2/{event|actor|production}/{id}/links
+{{site.search_api_server}}/api/v2/{event|actor|production}/{id}/links
 ```
 
 **Argumenten**
@@ -283,7 +283,7 @@ link	De te verwijderen link	X
 Request URL
 
 ```
-{server}/api/v2/event/123123/links
+{{site.search_api_server}}/api/v2/event/123123/links
 ```
 
 Post data

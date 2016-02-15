@@ -12,7 +12,7 @@ Het kan handig zijn om zoektermen voor te stellen op basis van (incomplete) user
 Het is mogelijk een lijst van overeenkomende zoektermen te suggereren. De bron is in dit geval een eerder gelanceerde zoekopdracht.
 
 ```
-{server}/searchv2/search/suggest
+{{site.search_api_server}}/searchv2/search/suggest
 ```
 
 | Parameter	| Beschrijving |
@@ -26,7 +26,7 @@ Response: lijst van overeenkomende zoektermen
 **Voorbeeld**
 
 ```
-{server}/searchv2/search/suggest?q=con
+{{site.search_api_server}}/searchv2/search/suggest?q=con
 ```
 
 ### Suggesties van items
@@ -34,7 +34,7 @@ Response: lijst van overeenkomende zoektermen
 Het is mogelijk om zoekresultaten voor te stellen op basis van incomplete user input. De bron is in dit geval de documenten opgeslagen in de index.
 
 ```
-{server}/searchv2/search/suggest/item Parameters:
+{{site.search_api_server}}/searchv2/search/suggest/item Parameters:
 ```
 
 | Parameter	| Beschrijving |
@@ -43,20 +43,24 @@ Het is mogelijk om zoekresultaten voor te stellen op basis van incomplete user i
 |type |	Indien niet opgegeven wordt in alle document types gezocht. Mogelijkheden: event, actor, production
 |max|	Maximum aantal suggesties dat teruggegeven wordt
 |fq	| Filter Query|
+
 Response: lijst van overeenkomende items
 
 **Voorbeeld**
+
 ```
-{server}/searchv2/search/suggest/item?title=Speel&fq=asset:true
+{{site.search_api_server}}/searchv2/search/suggest/item?title=Speel&fq=asset:true
 ```
 
 ## Suggesties i.v.m. spellingcontrole
 
-De spellingcontrole is een uitbreiding op de gewone search request, die kan aangesproken worden via de spellcheck parameter. Response: extra lijst van mogelijk verbeterde zoektermen.
+De spellingcontrole is een uitbreiding op de gewone search request, die kan aangesproken worden via de spellcheck parameter.
 
-Voorbeeld Kamaguka geeft suggesties kamagurka, kamasutra en kiwanuka
+Response: extra lijst van mogelijk verbeterde zoektermen.
+
+Voorbeeld: Kamaguka geeft suggesties kamagurka, kamasutra en kiwanuka
 
 
 ```
-{server}/searchv2/search?q=kamaguka&spellcheck=true
+{{site.search_api_server}}/searchv2/search?q=kamaguka&spellcheck=true
 ```

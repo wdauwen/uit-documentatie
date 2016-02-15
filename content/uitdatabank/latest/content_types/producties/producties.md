@@ -15,14 +15,14 @@ Dit biedt als extra voordeel dat een speellijst kan gegenereerd worden (op welke
 
 De velden van belang voor productie-items zijn een subset van de velden voor evenementen en activiteiten, met name die velden die geen betrekking hebben op waar en wanneer het aanbod doorgaat.
 
-| Naam | Beschrijving | Verplicht |
-| --- | --- | --- |
-| Titel |  Benaming van het aanbod | X |
-| Type aanbod |  Vb. cursus, podium, tentoonstelling | X |
-| Thema |  Vb. pop en rock, horror, renaissance ||
-| Algemene informatie | URL naar meer informatie over het betreffende item ||
-| Beschrijving | Een beschrijving van de productie ||
-| Leeftijdsklasse | Tot welke leetijdsklasse het aanbod zich richt ||
-| Verrijkingen | Links naar afbeeldingen, brochures, video, audio ||
-| Labels | Termen om informatie te filteren ||
-| Afbeelding | Vb. affiche, acteur |||
+| Naam | Beschrijving |
+| --- | --- |
+| Titel |  **Verplicht** - Benaming van het aanbod |
+| Type aanbod |  **Verplicht** - Vb. cursus, podium, tentoonstelling |
+| Thema |  Vb. pop en rock, horror, renaissance |
+| Algemene informatie | URL naar meer informatie over het betreffende item |
+| Beschrijving | Een beschrijving van de productie |
+| Leeftijdsklasse | Tot welke leetijdsklasse het aanbod zich richt |
+| Verrijkingen | Links naar afbeeldingen, brochures, video, audio |
+| Labels | Termen om informatie te filteren |
+| Afbeelding | Vb. affiche, acteur |

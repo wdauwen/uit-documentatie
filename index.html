@@ -9,14 +9,20 @@ layout: index
   </div>
 </div>
 
+<div class="search-full">
+  {% include search.html %}
+</div>
+
 <div class="catalog">
+  <p>Gidsen</p>
   <div class="books">
   {% for book in site.data.library %}
+  <div class="book">
   <div class="book-teaser">
   	<strong>{{ book.title }}</strong>
   	<p class="book-description">{{ book.description }}</p>
   	{% for version in book.versions limit:1  %}
-  		<p><a href="/{{ version.path }}index.html" class="btn btn-primary">Lezen</a></li></p>
+  		<p><a href="/{{ version.path }}index.html" class="btn">Lezen</a></li></p>
   	{% endfor %}
   	{% if book.versions.size > 1 %}
   	<p>Oudere versies</p>
@@ -26,6 +32,7 @@ layout: index
   		{% endfor %}
   	</ul>
   	{% endif %}
+  </div>
   </div>
   {% endfor %}
   </div>
