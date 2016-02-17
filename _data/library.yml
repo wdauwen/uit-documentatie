@@ -1,5 +1,7 @@
-- title: "UiTdatabank"
+- title: "Zo werkt UiTdatabank"
   description: "Dit document behandelt het datamodel van de UiTdatabank."
+  category: "Functioneel"
+  weight: 10
   versions:
     - name: "latest"
       path: "content/uitdatabank/latest/"
@@ -40,8 +42,10 @@
         summary:
           - title: "In 3 stappen een cdbxml document maken"
             href: "cdbxml/in_3_stappen_een_cdbxml_document_maken"
-- title: "Search API"
-  description: "Na het lezen van dit document ben je in staat zijn om via eenvoudige API calls de UiTdatabank te bevragen."
+- title: "UiTdatabank doorzoeken met Search API"
+  description: "Leer de querysyntax van de UiTdatabank."
+  category: "Technisch"
+  weight: 10
   versions:
     - name: "latest"
       path: "content/search_api/latest/"
@@ -73,8 +77,10 @@
       summary:
         - title: "Referentiegids"
           href: "referentiegids"
-- title: "Categorisatie API"
-  description: "Na het lezen van dit document ben je in staat zijn om via eenvoudige API calls de categorieën van UiTdatabank te bevragen."
+- title: "Categorisatie API van UiTdatabank"
+  description: "De categorisatie van UiTdatabank is beschikbaar via een API."
+  category: "Technisch"
+  weight: 20
   versions:
     - name: "latest"
       path: "content/categorisatie/latest/"
@@ -83,12 +89,16 @@
           href: "termen"
         - title: "Domeinen"
           href: "domeinen"
-- title: "UiTPAS"
-  description: "Na het lezen van dit document ben je in staat zijn om via eenvoudige API calls de categorieën van UiTdatabank te bevragen."
+- title: "Zo werkt UiTPAS"
+  description: "Ontdek de basisconcepten achter UiTPAS."
+  category: "Functioneel"
+  weight: 20
   versions:
     - name: "latest"
       path: "content/uitpas/latest/"
       summary:
+        - title: "Wat is UiTPAS?"
+          href: "uitpas"
         - title: "Organisatiestructuur"
           href: "organisatiestructuur/organisatiestructuur"
           summary:
@@ -140,3 +150,10 @@
               href: "processen/verenigingen"
             - title: "UiTPAS en UiTID koppelen"
               href: "processen/uitpas_en_uitid"
+- title: "Aan de slag met Culturefeed"
+  category: "Technisch"
+  description: "Maak gebruik van onze PHP-bibliotheken en Drupal-modules."
+  weight: 30
+  versions:
+    - name: "latest"
+      path: "content/culturefeed/latest/"
