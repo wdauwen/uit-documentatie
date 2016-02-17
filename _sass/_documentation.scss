@@ -186,8 +186,16 @@ a {
 	display: block;
 }
 
-.book-title {
+.book-teaser-title {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
 	margin: 0;
+
+  &:hover
+  {
+    text-decoration: underline;
+  }
 }
 
 .book-version {
@@ -202,6 +210,7 @@ a {
 }
 
 .book-teaser {
+  background-color: #FFF;
 	border: 1px solid $border-color;
 	padding: 1em;
 	margin-right: $spacing-unit;
@@ -210,53 +219,17 @@ a {
 	float: left;
 	display: block;
   position: relative;
-  background-color: #FFF;
-
-  &:before,
-  &:after
-  {
-    content: " ";
-    display: block;
-    border: 3px double $border-color;
-    position: absolute;
-    z-index: -1;
-    background-color: #FFF;
-    -moz-transition: all 0.15s ease-out;
-    -webkit-transition: all 0.15s ease-out;
-    -o-transition: all 0.15s ease-out;
-    transition: all 0.15s ease-out;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
-
-  &:after {
-    top: 1px;
-    bottom: -3px;
-    right: -3px;
-    left: 0;
-  }
-
-  &:before {
-    top: 1px;
-    bottom: -5px;
-    right: -5px;
-    left: 0;
-  }
 
 }
 
 @media screen and (min-width: $width-toc-visible) {
 
-  .books
-  {
+  .books {
     margin-right: -15px;
     margin-left: -15px;
   }
 
-  .book
-  {
+  .book {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
@@ -265,9 +238,23 @@ a {
     float: left;
   }
 
-  .book-teaser
-  {
+  .book-teaser {
+    height: 200px;
+  }
 
+  .book-teaser-title
+  {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+  }
+
+  .book-description {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
   }
 }
 
@@ -302,11 +289,21 @@ a {
 	color: #777;
 }
 
+.row
+{
+  display: block;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  background-color: $zebra;
+}
+
 .catalog {
 	width: 100%;
-	max-width: 1200px;
 	margin: 0 auto;
 	display: block;
+  max-width: 1200px;
 }
 
 .books {
@@ -317,20 +314,33 @@ a {
 
 footer {
   text-align: center;
-	border-top: 1px solid $border-color;
 	clear: both;
 	display: block;
 	margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
 	padding-top: $spacing-unit/2;
 }
 
 .hero {
-  //background-image: url(../img/hero-image.png);
-	background-color: $brand-primary;
-  background-size: contain;
-  //padding-top: 400px;
-  color: #FFF;
-  background-repeat: no-repeat;
+  line-height: 1;
+	background-color: $zebra;
+	text-align: center;
+}
+
+.hero-title {
+  font-size: 1.5em;
+  margin-top: 0;
+  font-weight: 600;
+  color: $navigation-color;
+}
+
+.hero-image {
+  background-image: url(../img/hero-image.png);
+  background-repeat: repeat-x;
+  background-position: center center;
+  background-size: auto 100%;
+  width: 100%;
+  padding-top: 200px;
 }
 
 .hero-content {
@@ -338,13 +348,26 @@ footer {
 	margin: 0 auto;
 	display: block;
 	padding: 1em;
-	text-align: center;
 }
 
 .hero-description {
-	font-size: 24px;
-	line-height: 1em;
+  font-size: 16px;
+  font-weight: 300;
+	line-height: 1.2em;
+  color: lighten($navigation-color, 20%);
 }
+
+@media screen and (min-width: 600px) {
+
+  .hero-title {
+    font-size: 2.5em;
+  }
+
+  .hero-description {
+	   font-size: 1.5em;
+  }
+}
+
 
 code, pre {
   font-family: Monaco, monospace;

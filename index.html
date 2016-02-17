@@ -3,9 +3,10 @@ layout: index
 ---
 
 <div class="hero">
+  <div class="hero-image"></div>
   <div class="hero-content">
-    <h1>UiT-documentatie voor ontwikkelaars</h1>
-    <p class="hero-description">Hier vind je alle documentatie.</p>
+    <h1 class="hero-title">{{site.title_full}}</h1>
+    <p class="hero-description">{{site.description}}</p>
   </div>
 </div>
 
@@ -13,27 +14,28 @@ layout: index
   {% include search.html %}
 </div>
 
-<div class="catalog">
-  <p>Gidsen</p>
-  <div class="books">
-  {% for book in site.data.library %}
-  <div class="book">
-  <div class="book-teaser">
-  	<strong>{{ book.title }}</strong>
-  	<p class="book-description">{{ book.description }}</p>
-  	{% for version in book.versions limit:1  %}
-  		<p><a href="/{{ version.path }}index.html" class="btn">Lezen</a></li></p>
-  	{% endfor %}
-  	{% if book.versions.size > 1 %}
-  	<p>Oudere versies</p>
-  	<ul>
-  		{% for version in book.versions offset:1  %}
-  			<li><a href="/{{ version.path }}index.html">{{ version.name }}</a></li>
-  		{% endfor %}
-  	</ul>
-  	{% endif %}
+<div class="row">
+  <div class="catalog">
+    <p><strong>Handleidingen</strong> <small>Technische how-to's</small></p>
+    <div class="books">
+    {% for book in site.data.library | sort: 'weight'%}
+      {% if book.category == "Technisch" %}
+        {% include bookteaser.html %}
+      {% endif %}
+    {% endfor %}
+    </div>
   </div>
-  </div>
-  {% endfor %}
+</div>
+
+<div class="row">
+  <div class="catalog">
+    <p class="block-title"><strong>Gidsen</strong> <small>Achtergrondinformatie</small></p>
+    <div class="books">
+    {% for book in site.data.library | sort: 'weight'%}
+      {% if book.category == "Functioneel" %}
+        {% include bookteaser.html %}
+      {% endif %}
+    {% endfor %}
+    </div>
   </div>
 </div>

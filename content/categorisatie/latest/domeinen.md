@@ -6,10 +6,10 @@
 Via ```http://taxonomy.uitdatabank.be/api/domain``` worden de domeinen weergegeven, en per domein de classificatie van termen daarbinnen.
 
 
-Parameter | Type | Beschrijving
--- | -- | --
-/{ID} | path |  Weergave van naam en ID van het opgevraagde domein. Voorbeeld: ```http://taxonomy.uitdatabank.be/api/domain/eventtype```
-/{ID}/classification | path | Weergave in een boommodel van de termen die tot het domein behoren. Voorbeeld: ```http://taxonomy.uitdatabank.be/api/domain/eventtype/classification```
+| Parameter | Type | Beschrijving |
+| -- | -- | -- |
+| /{ID} | path |  Weergave van naam en ID van het opgevraagde domein. Voorbeeld: ```http://taxonomy.uitdatabank.be/api/domain/eventtype``` |
+| /{ID}/classification | path | Weergave in een boommodel van de termen die tot het domein behoren. Voorbeeld: ```http://taxonomy.uitdatabank.be/api/domain/eventtype/classification```
 
 Aandachtspunten:
 

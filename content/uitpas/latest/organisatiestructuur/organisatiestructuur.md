@@ -1,11 +1,10 @@
 ---
 ---
 
-De UiTPAS organisatie architectuur bestaat uit rollen (wie doet het), taken (wat doen ze), applicatiecomponenten (waar doen ze het) en informatiesystemen (welke informatie).
+# Organisatiestructuur
 
+De UiTPAS organisatie architectuur bestaat uit
 
-
-
-
-
-Informatiesystemen
+* [rollen & taken](../rollen) (wie doet wat)
+* [applicatiecomponenten](../applicatiecomponenten) (waar doen ze het)
+* [informatiesystemen](../informatiesystemen) (welke informatie).
