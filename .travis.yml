@@ -2,6 +2,9 @@ language: ruby
 cache: bundler
 rvm:
 - 2.1.2
+branches:
+  only:
+  - master
 install: bundle install
 script: bundle exec rake test
 env:
@@ -17,4 +20,5 @@ deploy:
   skip_cleanup: true
   local_dir: _site
   on:
+    branch: master
     repo: cultuurnet/uit-documentatie
