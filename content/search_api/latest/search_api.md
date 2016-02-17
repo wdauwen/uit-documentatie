@@ -22,9 +22,9 @@ Om de Search API aan te spreken, moet je gebruik maken van OAuth via een **consu
 | sort | [Sorteerveld](../sorteren). Default: score desc | sort=city+asc |
 | pt | [Geografisch zoeken](../geografisch_zoeken) |  pt=51.036906,3.720739 |
 | sfield | [Geografisch zoeken](../geografisch_zoeken) |  sfield=physical_gis |
-| d | [Geografisch zoeken](../geografisch_zoeken.)|  d=5 |
-| facetField | [Gefacetteerde classificatie](facetten.md) |  facetField=category |
-| transform | Standaard worden zoekresultaten als volledige CdbXML 3.2 documenten teruggegeven. Indien slechts een beperkt aantal velden nodig is, typisch voor weergave van zoekresultaten in lijsten, wordt de parameter transform gebruikt. Zie [Output formaat](output_formaten.md). |  transform=list |
+| d | [Geografisch zoeken](../geografisch_zoeken)|  d=5 |
+| facetField | [Gefacetteerde classificatie](../facetten) |  facetField=category |
+| transform | Standaard worden zoekresultaten als volledige CdbXML 3.2 documenten teruggegeven. Indien slechts een beperkt aantal velden nodig is, typisch voor weergave van zoekresultaten in lijsten, wordt de parameter transform gebruikt. Zie [Output formaat](../output_formaten). |  transform=list |
 | past | Standaard worden evenementen uit het verleden uit de zoekresultaten gefilterd. Default: false | past=true |
 | datetype | Een extra veld om eenvoudig te filteren op veelgebruikte tijd ranges, en als facetFilter. Volgende mogelijkheden bestaan: today,tomorrow, thisweekend, nextweekend, next7days, next14days, next30days, next3months, next6months, next12months, permanent. |  datetype=today |
 

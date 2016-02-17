@@ -11,7 +11,7 @@ Om jouw evenementen te vertalen naar het XML-formaat van de UiTdatabank CdbXML 3
 
 Nadat je deze drie stappen doorlopen hebt is de informatie klaar om te verzenden naar de UiTdatabank.
 
-Het CdbXML formaat ondersteunt daarnaast nog tal van andere velden en mogelijkheden. Die zijn uitgebreid beschreven in de sectie [Datamodel en uitwisselingsformaat](/docs/cdbxml). Je kan ook het XML-schema raadplegen: [http://www.cultuurdatabank.com/XMLSchema/CdbXSD/3.2/FINAL/CdbXSD.xsd](http://www.cultuurdatabank.com/XMLSchema/CdbXSD/3.2/FINAL/CdbXSD.xsd).
+Het CdbXML formaat ondersteunt daarnaast nog tal van andere velden en mogelijkheden. Die zijn uitgebreid beschreven in de sectie [Datamodel en uitwisselingsformaat](../cdbxml). Je kan ook het XML-schema raadplegen: [http://www.cultuurdatabank.com/XMLSchema/CdbXSD/3.2/FINAL/CdbXSD.xsd](http://www.cultuurdatabank.com/XMLSchema/CdbXSD/3.2/FINAL/CdbXSD.xsd).
 
 ## Stap 1: root node ("/")
 
@@ -87,7 +87,7 @@ Tijdsinformatie. Het is verplicht aan te geven wanneer het event plaatsvindt. In
 </calendar>
 ```
 
-Let op, als een event op meer dan één tijdstip</span> plaatsvindt, stuur je geen event object door per tijdstip maar voeg je binnen het betreffende event meerdere tijdstippen toe, of een periode, of geef je aan dat het een permanent aanbod is. Zie hiervoor in de sectie [Uitwisselingsformaat in XML](/docs/cdbxml).
+Let op, als een event op meer dan één tijdstip</span> plaatsvindt, stuur je geen event object door per tijdstip maar voeg je binnen het betreffende event meerdere tijdstippen toe, of een periode, of geef je aan dat het een permanent aanbod is. Zie hiervoor in de sectie [Uitwisselingsformaat in XML](../cdbxml).
 
 ### //event/categories/category/@catid="eventtype"
 
@@ -158,7 +158,7 @@ Geef bij voorkeur ook een straat en een huisnummer zodat de UiTdatabank de corre
             <performer><label>Jan De Groot</label></performer>
             <performer>
               <role>Regisseur</role>
-              <label>Karel Nieuwenhuyze</label>              
+              <label>Karel Nieuwenhuyze</label>
             </performer>
           </performers>
           <media>
@@ -197,7 +197,7 @@ Geef bij voorkeur ook een straat en een huisnummer zodat de UiTdatabank de corre
 Zorg ervoor dat het externalid dat je meestuurt uniek is: begin het id met een unieke code die staat voor de aanleverende partner, genereer een random id,...
 
 
-### /event/categories/category/@catid="theme"  
+### /event/categories/category/@catid="theme"
 
 Hierboven bij de verplichte velden stond beschreven dat het verplicht is het type aanbod te voorzien. Voor bepaalde types is het daarnaast zeer wenselijk dat je ook het "thema" meegeeft. Het thema beschrijft "waarover" het betreffende aanbod gaat. Bijv. bij film: horror, comedy, ... bij concert: pop en rock, klassieke muziek, jazz, ...
 
