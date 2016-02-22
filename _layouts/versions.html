@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	{% include head.html %}
+
+	<body>
+
+		{% assign filename = page.path | split: '/' | last %}
+		{% assign folder = page.path | remove: filename %}
+                {% for book in site.data.library %}
+                       {% if folder contains book.path %}
+                               {% assign selected_book = book %}
+                       {% endif %}
+                {% endfor %}
+
+		{% include header.html %}
+
+		<div class="page">
+		        <div class="page-inner">
+			        <article>
+				        <section class="markdown-body">
+                                        <h1>{{ selected_book.title }}</h1>
+
+                                        {% assign stripped_content = content | strip_newlines %}
+                                        {% if stripped_content == "" %}
+				                {{ selected_book.description }}
+                                        {% else %}
+                                                {{ content }}
+                                        {% endif %}
+
+                                        <h1>Versies:</h1>
+                                                <ul>
+                                                {% for version in selected_book.versions %}
+                                                        <li><a href="/{{version.path}}index.html">{{version.name}}</a></li>
+                                                {% endfor %}
+                                                </ul>
+                                        </section>
+			        </article>
+			</div>
+                        {% include footer.html %}
+		</div>
+
+		<div class="overlay"></div>
+
+	</body>
+
+</html>

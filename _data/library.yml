@@ -1,5 +1,6 @@
 - title: "Zo werkt UiTdatabank"
   description: "Dit document behandelt het datamodel van de UiTdatabank."
+  path: "content/uitdatabank/"
   category: "Functioneel"
   weight: 10
   versions:
@@ -44,6 +45,7 @@
             href: "cdbxml/in_3_stappen_een_cdbxml_document_maken"
 - title: "UiTdatabank doorzoeken met Search API"
   description: "Leer de querysyntax van de UiTdatabank."
+  path: "content/search_api/"
   category: "Technisch"
   weight: 10
   versions:
@@ -79,6 +81,7 @@
           href: "referentiegids"
 - title: "Categorisatie API van UiTdatabank"
   description: "De categorisatie van UiTdatabank is beschikbaar via een API."
+  path: "content/categorisatie/"
   category: "Technisch"
   weight: 20
   versions:
@@ -91,6 +94,7 @@
           href: "domeinen"
 - title: "Zo werkt UiTPAS"
   description: "Ontdek de basisconcepten achter UiTPAS."
+  path: "content/uitpas/"
   category: "Functioneel"
   weight: 20
   versions:
@@ -153,6 +157,7 @@
 - title: "Aan de slag met Culturefeed"
   category: "Technisch"
   description: "Maak gebruik van onze PHP-bibliotheken en Drupal-modules."
+  path: "content/culturefeed/"
   weight: 30
   versions:
     - name: "latest"
