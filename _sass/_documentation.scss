@@ -2,8 +2,8 @@
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, .fa {
@@ -203,11 +203,6 @@ a {
 	font-weight: normal;
 }
 
-.book-versions {
-  padding: 0 $spacing-unit;
-	border-top: 1px solid $border-color;
-  font-size: small;
-}
 
 .book-teaser {
   background-color: #FFF;
@@ -299,9 +294,9 @@ a {
   background-color: $zebra;
 }
 
-.catalog {
-	width: 100%;
-	margin: 0 auto;
+.catalog,
+.book-index {
+	margin: 0 15px;
 	display: block;
   max-width: 1200px;
 }

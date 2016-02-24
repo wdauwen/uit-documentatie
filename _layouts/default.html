@@ -27,19 +27,6 @@
 				{% include toc-item.html collection=selected_version.summary level=0 path=selected_version.path %}
 				</nav>
 
-				{% if selected_book.versions.size > 1 %}
-				<section class="book-versions">
-					<p>Andere versies:</p>
-					<ul>
-						{% for version in selected_book.versions %}
-							{% if version.name != selected_version.name %}
-								<li><a href="/{{version.path}}index.html">{{version.name}}</a></li>
-							{% endif %}
-						{% endfor %}
-					</ul>
-				</section>
-				{% endif %}
-
 			</div>
 
 		</div>
