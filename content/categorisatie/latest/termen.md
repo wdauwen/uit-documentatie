@@ -13,7 +13,7 @@ q | Query String parameter | Mits deze parameter filtert men de resultaten op ba
 **Voorbeeld response**
 
 ```
-√-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <cdbxml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cultuurdatabank.com/XMLSchema/CdbXSD/3.2/FINAL">
  <nofrecords>3</nofrecords>
  <categorisation url="http://rest.uitdatabank.be/api/term/?q=pop">
