@@ -8,3 +8,7 @@ group :test do
   gem "html-proofer"
   gem "preamble"
 end
+
+group :jekyllplugins do
+  gem "jekyll-asciidoc", :git => "https://github.com/asciidoctor/jekyll-asciidoc.git"
+end

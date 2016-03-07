@@ -12,8 +12,11 @@ defaults:
       layout: "default"
 permalink: pretty
 # Build settings
+gems: [jekyll-asciidoc]
 exclude: [README.md, Gemfile, Gemfile.lock, Rakefile, tasks, vendor ]
 markdown: kramdown
+asciidoc: asciidoctor
+asciidoc_ext: asciidoc,adoc,ad
 kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
 search_api_server: "https://www.uitid.be/uitid/rest"
