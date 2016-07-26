@@ -162,3 +162,20 @@
   versions:
     - name: "latest"
       path: "content/culturefeed/latest/"
+- title: "gebruikershandleidingen voor UiTPAS"
+  description: "hoe gebruik je de UiTPas systemen."
+  path: "content/uitpas-handleidingen/"
+  category: "Technisch"
+  weight: 20
+  versions:
+    - name: "latest"
+      path: "content/uitpas-handleidingen/latest/"
+      summary:
+        - title: "Check in devices"
+          href: "Check_in_devices"
+          summary:
+            - title: "hardware"
+              href: "hardware"
+            - title: "netwerk"
+              href: "netwerk"
+
