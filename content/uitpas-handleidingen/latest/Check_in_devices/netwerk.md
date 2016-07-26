@@ -1,6 +1,6 @@
 ---
 ---
-
+## netwerk vereisten
 
 Om een IP adres (en gateway en dns) te verkrijgen rekent de zuil op dhcp. hij geeft dan tijdens het opstarten zijn gekregen IP adress weer zodat u er indien nodig via ssh aan kan.
 
