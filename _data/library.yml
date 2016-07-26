@@ -175,7 +175,7 @@
           href: "Check_in_devices"
           summary:
             - title: "hardware"
-              href: "hardware"
+              href: "Check_in_devices/hardware"
             - title: "netwerk"
-              href: "netwerk"
+              href: "Check_in_devices/netwerk"
 
