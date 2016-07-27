@@ -29,6 +29,7 @@ iface eth0 inet dhcp
 
 vervangen door (voorbeeld is 192.168.1.130/24 netwerk, pas waarden aan naar nodig)   
 
+
 ```
 iface eth0 inet static
 
