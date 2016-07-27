@@ -181,3 +181,8 @@
             - title: "netwerk"
               href: "Check_in_devices/netwerk"
 
+            - title: "trouble shooting"
+              href: "Check_in_devices/troubleshooting"
+              summary:
+                - title: "foutmeldingen"
+                  href: "Check_in_devices/error_messages"
