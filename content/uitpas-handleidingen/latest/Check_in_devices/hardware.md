@@ -1,7 +1,7 @@
 ---
 ---
 
-# Hardware 
+## Hardware architectur van het Check-in Device
 
 
 Samenstelling van de CID
