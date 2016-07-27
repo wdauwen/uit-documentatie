@@ -184,5 +184,5 @@
             - title: "trouble shooting"
               href: "Check_in_devices/troubleshooting"
               summary:
-                - title: "foutmeldingen"
-                  href: "Check_in_devices/error_messages"
+                - title: "Netwerk problemen"
+                  href: "Check_in_devices/network_errors"
