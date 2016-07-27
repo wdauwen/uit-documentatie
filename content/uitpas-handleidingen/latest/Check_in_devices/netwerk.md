@@ -23,14 +23,12 @@ hierna kunnen we de netwerk-instellingen wijzigen in de file /etc/network/interf
 Om een vast IP adress toe te kennen moetten we de lijn 
 
 
-
-<blockquote>
+```
 iface eth0 inet dhcp
-</blockquote>
+```
 
 vervangen door (voorbeeld is 192.168.1.130/24 netwerk, pas waarden aan naar nodig)   
 
-<blockquote>
 ```
 iface eth0 inet static
        address 192.168.1.130
@@ -39,7 +37,6 @@ iface eth0 inet static
        broadcast 192.168.1.255
        gateway 192.168.1.250
 ```
-</blockquote>
 
 en in /etc/resolv.conf moet ook de nameserver toegevoegd worden 
 
