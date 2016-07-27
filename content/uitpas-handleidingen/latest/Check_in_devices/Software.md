@@ -1,6 +1,7 @@
 ---
 ---
 
+De CID heeft als OS een linux systeem (raspbian, een versie van Debian) waar een Java FX applicatie op draait. 
 
 Het management op OS niveau van de CID gebeurt via ssh (pi@ipadress). Het IP adress word weergegeven tijdens het opstarten van de zuil. 
 
