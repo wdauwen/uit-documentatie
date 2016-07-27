@@ -10,7 +10,7 @@ Het management op OS niveau van de CID gebeurt via ssh (pi@ipadress). Het IP adr
 
 De java aplicatie staat met zijn config files in de home dir van de pi user (/home/pi) 
 
- * java app : pi-(versionnumber).jar
+ * java app : pi-''versienummer''.jar
  * config file : cid.config
 
 Deze applicatie schrijft zijn  logs naar de file /tmp/cid.log , 
