@@ -176,6 +176,8 @@
           summary:
             - title: "hardware"
               href: "Check_in_devices/hardware"
+            - title: "software"
+              href: "Check_in_devices/software"
             - title: "netwerk"
               href: "Check_in_devices/netwerk"
 
