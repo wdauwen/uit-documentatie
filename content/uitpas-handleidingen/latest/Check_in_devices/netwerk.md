@@ -32,16 +32,11 @@ vervangen door (voorbeeld is 192.168.1.130/24 netwerk, pas waarden aan naar nodi
 
 `
        iface eth0 inet static
-
-              address 192.168.1.130
-
-              netmask 255.255.255.0
-
-              network 192.168.1.0
-
-              broadcast 192.168.1.255
-
-              gateway 192.168.1.250
+        address 192.168.1.130
+        netmask 255.255.255.0
+        network 192.168.1.0
+        broadcast 192.168.1.255
+        gateway 192.168.1.250
 `
 
 en in /etc/resolv.conf moet ook de nameserver toegevoegd worden
