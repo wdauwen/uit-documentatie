@@ -29,4 +29,4 @@ De rollende logs zijn zichtbaar mbv commando
 Deze Logs staan opgeslagen in een tmpfs filesystem .. dus herstarten van de zuil wist de logs. 
 
 
-De logs worden ook Naar een monitoring server geschreven, je kan deze bekijken met de monitoring app die je kan downloaden op [[http://files.uitpas.be/CID_monitor/]]
+De logs worden ook Naar een monitoring server geschreven, je kan deze bekijken met de monitoring app die je kan downloaden op http://files.uitpas.be/CID_monitor/
