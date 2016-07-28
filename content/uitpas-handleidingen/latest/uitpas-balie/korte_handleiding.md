@@ -45,5 +45,5 @@ rechts alle UiTPASactiviteiten en -voordelen voor jouw balie.
 
 #### Vragen of problemen
 
-Mail naar UiTPAS@<jouwgemeente>.be.
+Mail naar UiTPAS@''jouwgemeente''.be.
 Bij technische problemen van de software: FAQ via Help of probleem-knop.
