@@ -22,26 +22,33 @@ rechts alle UiTPASactiviteiten en -voordelen voor jouw balie.
 
 ##### Kansentarief registreren:
 
-• Kies de activiteit.
-• Kies het tarief.
-• Ken het tarief toe.
+* Kies de activiteit.
+
+* Kies het tarief.
+
+* Ken het tarief toe.
 
 ##### Punt sparen:
 
-• Kies de activiteit.
-• Ken een punt toe.
+* Kies de activiteit.
+
+* Ken een punt toe.
 
 ##### Voordeel omruilen:
 
-• Kies het voordeel.
-• Ken een voordeel toe, klik op ‘omruilen’, klik daarna op ‘bevestigen’.
+* Kies het voordeel.
+
+* Ken een voordeel toe, klik op ‘omruilen’, klik daarna op ‘bevestigen’.
 
 ##### Belangrijk: 
 
-• De pas inscannen kan NIET via de browser.
-• Een pashouder kan slechts één punt sparen per deelname.
-• Een pashouder kan slechts één ticket kopen per activiteit/dag.
-• Voordelen en kansentarieven verschijnen enkel als de persoon er ook effectief recht op heeft.
+* De pas inscannen kan NIET via de browser.
+
+* Een pashouder kan slechts één punt sparen per deelname.
+
+* Een pashouder kan slechts één ticket kopen per activiteit/dag.
+
+* Voordelen en kansentarieven verschijnen enkel als de persoon er ook effectief recht op heeft.
 
 #### Vragen of problemen
 
