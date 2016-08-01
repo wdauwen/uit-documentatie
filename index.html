@@ -14,9 +14,11 @@ layout: index
   {% include search.html %}
 </div>
 
+<div class="row library">
+
 <div class="row">
   <div class="catalog">
-    <p><strong>Handleidingen</strong> <small>Technische how-to's</small></p>
+    <h2 class="group-title"><strong>Handleidingen</strong> <small>Technische how-to's, geschreven voor ontwikkelaars en systeembeheerders</small></h2>
     <div class="books">
     {% for book in site.data.library | sort: 'weight'%}
       {% if book.category == "Technisch" %}
@@ -29,7 +31,7 @@ layout: index
 
 <div class="row">
   <div class="catalog">
-    <p class="block-title"><strong>Gidsen</strong> <small>Achtergrondinformatie</small></p>
+    <h2 class="group-title"><strong>Gidsen</strong> <small>Achtergrondinformatie voor analisten</small></h2>
     <div class="books">
     {% for book in site.data.library | sort: 'weight'%}
       {% if book.category == "Functioneel" %}
@@ -38,4 +40,6 @@ layout: index
     {% endfor %}
     </div>
   </div>
+</div>
+
 </div>
