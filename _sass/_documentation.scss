@@ -33,12 +33,15 @@ a {
 	z-index: 1;
 	width: 300px;
 	color: #364149;
-	background: #fafafa;
-	border-right: 1px solid $border-color;
+	background: $zebra;
+	//border-right: 1px solid $border-color;
 	-webkit-transition: left 250ms ease;
 	-moz-transition: left 250ms ease;
 	-o-transition: left 250ms ease;
 	overflow-y: auto;
+  background-image: url("../img/shadow.png");
+  background-position: right top;
+  background-repeat: repeat-y;
 }
 
 .toc-inner {
@@ -203,7 +206,6 @@ a {
 	font-weight: normal;
 }
 
-
 .book-teaser {
   background-color: #FFF;
 	border: 1px solid $border-color;
@@ -323,7 +325,8 @@ footer {
 }
 
 .hero-title {
-  font-size: 1.5em;
+  //font-family: "Lucida Console", Monaco, monospace;
+  font-size: 2em;
   margin-top: 0;
   font-weight: 600;
   color: $navigation-color;
@@ -459,4 +462,30 @@ input.gsc-input,
   width: 100%;
   margin: 0 auto;
   max-width: $width-toc-visible * 1.5;
+}
+
+/* */
+
+a[href^="#"] {
+  text-decoration: none;
+}
+
+.group-title {
+  color: $navigation-color;
+}
+
+.group-title small {
+  font-weight: normal;
+  font-size: 65%;
+  color: $navigation-color;
+
+  &:before {
+    content: "— ";
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.library {
+  padding-top: 15px;
 }
